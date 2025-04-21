@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
 .navbar{
     display: flex;
     align-items: center;
@@ -5,6 +6,12 @@
     margin: 20px 170px;
 }
 
+.navbar .logo{
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5rem;
+    color: #c031e8;
+    margin: 0;
+}
 .nav-menu{
     display: flex;
     align-items: center;
