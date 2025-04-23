@@ -25,7 +25,7 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-            <div className="contact-right">
+            <form className="contact-right">
                 <label htmlFor="name">Your Name: </label>
                 <input type="text" placeholder='Enter your name' name='name' id='name'/>
 
@@ -36,7 +36,7 @@ const Contact = () => {
                 <textarea name="message" id="msg" rows="8" placeholder='Enter your message'></textarea>
 
                 <button className='contact-submit' type='submit'>Submit now</button>
-            </div>
+            </form>
         </div>
     
         
