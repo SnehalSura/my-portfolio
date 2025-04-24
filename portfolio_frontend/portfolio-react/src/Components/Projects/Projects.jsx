@@ -2,12 +2,11 @@ import React from 'react'
 import './Projects.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-
 import Projects_data from '../../assets/projects_data'
 
 const Projects = () => {
   return (
-    <div className='projects'>
+    <div className='projects' id='projects'>
       <div className="projects-title">
         <h1>My Projects</h1>
       </div>

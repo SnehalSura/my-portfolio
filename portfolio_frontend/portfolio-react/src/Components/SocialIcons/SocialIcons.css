@@ -1,0 +1,16 @@
+.social-icons {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+  }
+  
+  .social-icons a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #aaa;       /* a subtle hover effect */
+  }
+  

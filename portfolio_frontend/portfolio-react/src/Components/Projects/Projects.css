@@ -66,3 +66,36 @@
     transform: scale(1.05);
     transition: 0.4s;
 }
+
+@media (max-width: 768px){
+    .projects{
+        align-items: start;
+        gap: 70px;
+        margin: 100px 70px;
+    }
+
+    .projects-title h1{
+        padding: 0;
+        font-size: 50px;
+    }
+
+    .project-card{
+        gap: 20px;
+        padding: 32px;
+    }
+
+    .project-card h2{
+        font-size: 28px;
+    }
+
+    .project-card p{
+        font-size: 18px;
+        line-height: 32px;
+        max-width: 300px;
+    }
+
+    .projects-container{
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+}

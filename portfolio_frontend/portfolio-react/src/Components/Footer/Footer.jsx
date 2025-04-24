@@ -2,6 +2,9 @@ import React from 'react'
 import './Footer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
+import { faLaptop } from "@fortawesome/free-solid-svg-icons";
+import { faFacebook, faLinkedin, faGithub, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import SocialIcons from '../SocialIcons/SocialIcons';
 
 
 const Footer = () => {
@@ -9,17 +12,15 @@ const Footer = () => {
     <footer className='footer'>
         <div className="footer-top">
             <div className="footer-top-left">
-                <img src="" alt="" />
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione dolorum voluptate corporis minima accusantium pariatur.</p>
+                <h1 className='logo'>Snehal</h1>
+                <p>Crafting Solutions with Passion and Precision! <span className='last-para'>Let’s Build Something Together!</span></p>
+                <p>
+                  <FontAwesomeIcon icon={faLaptop} style={{ marginRight: "12px", color: "#fff" }} />
+                  Python Enthusiast | Front-End Developer | React Learner
+                </p>
             </div>
             <div className="footer-top-right">
-                <div className="footer-email-input">
-                  <FontAwesomeIcon icon={faUser} />
-                  <input type="email" placeholder='Enter your email' />
-                </div>
-                <div className='footer-subscribe'>
-                  Subscribe
-                </div>
+              <SocialIcons/>
             </div>
             
         </div>
