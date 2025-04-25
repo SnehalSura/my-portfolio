@@ -32,3 +32,11 @@ class ContactProfile(models.Model):
 
     img_alt = models.CharField(max_length=255)
     image = models.ImageField(upload_to='profileImage/')  # Path to store images
+
+
+class ContactForm(models.Model):
+    name = models.CharField(max_length=100)
+    email = models.EmailField()
+    message = models.TextField()
+
+

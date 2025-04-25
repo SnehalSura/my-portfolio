@@ -13,12 +13,14 @@ router = DefaultRouter()
 router.register('aboutmeapi', views.AboutViewSet, basename='aboutme')
 router.register('projectsapi', views.ProjectsViewSet, basename='projects')
 router.register('contactProfileapi', views.ContactProfileViewSet, basename='ContactProfile')
-
+router.register('contactFormapi', views.ContactFormViewSet, basename='contactForm')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include(router.urls)),    
 ]
+
+# Search the below thing later
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
  

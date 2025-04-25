@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from rest_framework.viewsets import ModelViewSet
-from .models import Aboutme, Projects, ContactProfile
-from .serializers import AboutmeSerializer, ProjectsSerializer, ContactProfileSerializer
+from .models import Aboutme, Projects, ContactProfile, ContactForm
+from .serializers import AboutmeSerializer, ProjectsSerializer, ContactProfileSerializer, ContactFormSerializer
 
 # Create your views here.
 class AboutViewSet(ModelViewSet):
@@ -15,3 +15,9 @@ class ProjectsViewSet(ModelViewSet):
 class ContactProfileViewSet(ModelViewSet):
     queryset = ContactProfile.objects.all()
     serializer_class = ContactProfileSerializer
+
+class ContactFormViewSet(ModelViewSet):
+    queryset = ContactForm.objects.all()
+    serializer_class = ContactFormSerializer
+
+
