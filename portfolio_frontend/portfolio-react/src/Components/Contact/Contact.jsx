@@ -13,7 +13,7 @@ const Contact = () => {
   useEffect(() => {
     // Fetching data from the Django REST API
     axios
-      .get("http://127.0.0.1:8000/contactProfileapi/") // Update this URL if needed
+      .get("http://127.0.0.1:8000/contactProfileapi/")
       .then((response) => {
         console.log(response.data);
         setContact(response.data);                // Save the fetched data
@@ -21,7 +21,7 @@ const Contact = () => {
       })
       .catch((error) => {
         console.error("Error fetching the Projects data:", error);
-        setLoading(false); // Turn off loading even if there is an error
+        setLoading(false); 
       });
   }, []);
 

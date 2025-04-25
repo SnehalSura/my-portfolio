@@ -6,7 +6,7 @@ const ResumeButton = () => {
     const handleDownloadResume = async () => {
         try {
             const response = await axios.get('http://127.0.0.1:8000/api/resume/', {
-                responseType: 'blob', // Important for downloading files
+                responseType: 'blob',         // Important for downloading files
             });
 
             // Create a URL for the downloaded file

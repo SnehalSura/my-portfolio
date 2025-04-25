@@ -5,20 +5,19 @@ import profile_img from '../../assets/profile_photo.jpg';
 import axios from 'axios';
 
 const About = () => {
-    const [about, setAbout] = useState([]); // Initialize state as an empty array
-    const [loading, setLoading] = useState(true); // Add loading state
+    const [about, setAbout] = useState([]);          // Initialize state as an empty array
+    const [loading, setLoading] = useState(true);    // Add loading state
 
     useEffect(() => {
         axios
-            .get("http://127.0.0.1:8000/aboutmeapi/") // Your DRF endpoint
+            .get("http://127.0.0.1:8000/aboutmeapi/")     // DRF endpoint
             .then((response) => {
-                console.log(response.data); // Log the response for debugging
-                setAbout(response.data); // Save data to state
-                setLoading(false); // Set loading to false after data is fetched
+                setAbout(response.data);       // Save data to state
+                setLoading(false);             // Set loading to false after data is fetched
             })
             .catch((error) => {
                 console.error("Error fetching the About Me data:", error);
-                setLoading(false); // Even on error, stop the loading state
+                setLoading(false);             // Even on error, stop the loading state
             });
     }, []);
 
@@ -39,7 +38,7 @@ const About = () => {
             </div>
             <div className="about-section">
                 <div className="about-left">
-                    <img src={profile_img} alt="profile image" height="500px" width="450px" />
+                    <img src={profile_img} alt="profile image" height="500px" />
                 </div>
                 <div className="about-right">
                     <div className="about-para">
