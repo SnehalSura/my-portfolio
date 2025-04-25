@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Aboutme, Projects
+from .models import Aboutme, Projects, ContactProfile
 
 # Register your models here.
 
@@ -10,3 +10,7 @@ class AboutmeAdmin(admin.ModelAdmin):
 @admin.register(Projects)
 class ProjectsAdmin(admin.ModelAdmin):
     list_display = ['id', 'name', 'desc' ]
+
+@admin.register(ContactProfile)
+class ContactProfileAdmin(admin.ModelAdmin):
+    list_display = ['id', 'email', 'loc', 'ph_no', 'img_alt', 'image']
