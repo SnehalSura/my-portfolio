@@ -20,6 +20,9 @@
     font-size: 20px;
 }
 
+.nav-menu li .anchor-link{
+    transition: 0.3s;
+}
 .nav-menu li .anchor-link:hover{
     color: #c031e8;
 }
@@ -89,6 +92,5 @@
         font-size: 30px;
         padding-left: 100px;
         flex-direction: row;
-        gap: 20px;
     }
 }

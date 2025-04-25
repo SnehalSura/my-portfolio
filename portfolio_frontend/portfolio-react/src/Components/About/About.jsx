@@ -39,7 +39,7 @@ const About = () => {
             </div>
             <div className="about-section">
                 <div className="about-left">
-                    <img src={profile_img} alt="profile image" height="420px" />
+                    <img src={profile_img} alt="profile image" height="500px" width="450px" />
                 </div>
                 <div className="about-right">
                     <div className="about-para">

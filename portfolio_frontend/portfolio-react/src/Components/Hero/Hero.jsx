@@ -4,6 +4,7 @@ import profile_img from '../../assets/profile_photo.jpg'
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import ResumeButton from './ResumeButton/ResumeButton';
 
 const Hero = () => {
   const [profile_image, setImage] = useState([]);
@@ -33,7 +34,7 @@ const Hero = () => {
   }
 
   return (
-    <div className='hero' id='home'> 
+    <div className='hero' id='home'>
         
         <img src={profile_image[0].image} alt={profile_image[0].img_alt} height="300px" />
         
@@ -43,7 +44,7 @@ const Hero = () => {
 
         <div className="hero-action">
             <div className="hero-connect"><AnchorLink className='anchor-link' href='#contact'>Connect With Me</AnchorLink></div>
-            <div className="hero-resume">My resume</div>
+            <ResumeButton/>
         </div>
     </div> 
   )

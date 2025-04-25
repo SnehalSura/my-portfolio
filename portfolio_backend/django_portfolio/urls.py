@@ -17,7 +17,8 @@ router.register('contactFormapi', views.ContactFormViewSet, basename='contactFor
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include(router.urls)),    
+    path('', include(router.urls)),  
+    path('api/resume/', views.ResumeDownloadView.as_view(), name='resume-download'),  
 ]
 
 # Search the below thing later

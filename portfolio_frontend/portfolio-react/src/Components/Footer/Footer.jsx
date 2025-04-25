@@ -16,7 +16,7 @@ const Footer = () => {
                 <p>Crafting Solutions with Passion and Precision! <span className='last-para'>Let’s Build Something Together!</span></p>
                 <p>
                   <FontAwesomeIcon icon={faLaptop} style={{ marginRight: "12px", color: "#fff" }} />
-                  Python Enthusiast | Front-End Developer | React Learner
+                  "Passionate Python Developer | Aspiring Front-End Expert | React Explorer"
                 </p>
             </div>
             <div className="footer-top-right">
@@ -30,7 +30,7 @@ const Footer = () => {
               <div className="footer-bottom-right">
                 <p>Terms of Services</p>
                 <p>Privacy Policy</p>
-                <p>Connect with me</p>
+                <a href="#contact"><p>Connect with me</p></a>
               </div>
             </div>
     </footer>

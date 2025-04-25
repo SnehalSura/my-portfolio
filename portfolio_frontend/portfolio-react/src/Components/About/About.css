@@ -69,16 +69,21 @@
 
 @media (max-width: 768px){
     .about{
-        gap: 80px;
+        /* gap: 80px; */
         margin: 50px 70px;
         align-items: start;
+    }
+    .about-title{
+        margin: 0;
     }
     .about-title h1{
         font-size: 50px;
         padding: 0;
+        margin: 0;
     }
     .about-section{
         flex-direction: column;
+        margin-top: 0;
     }
     .about-left{
         display: none;

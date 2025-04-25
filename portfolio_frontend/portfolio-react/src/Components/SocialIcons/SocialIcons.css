@@ -1,7 +1,7 @@
 .social-icons {
     display: flex;
-    gap: 25px;
-    align-items: center;
+    gap: 30px;
+    align-items: end;
   }
   
   .social-icons a {
@@ -11,6 +11,17 @@
   }
   
   .social-icons a:hover {
-    color: #aaa;       /* a subtle hover effect */
+    /* color: #aaa; */
+    color: #c031e8;
+    transform: scale(1.1);      /* Slight scaling effect */
+
+}
+
+@media (max-width: 768px){
+  .social-icons {
+    gap: 25px;
+    align-items: center;
   }
+
+}
   

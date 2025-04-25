@@ -67,6 +67,21 @@
     display: flex;
     gap: 50px;
     margin-bottom: 50px;
+    justify-content: center;
+}
+.footer-bottom-right a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer-bottom-right p{
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.footer-bottom-right p:hover{
+    transform: scale(1.1);  
+    color: #c031e8;
 }
 
 .footer-email-input:hover{
@@ -97,6 +112,7 @@
     }
     .footer-top-left p{
         font-size: 18px;
+        margin-bottom: 1rem;
         max-width: 90%;
     }
     .footer-top-right{
