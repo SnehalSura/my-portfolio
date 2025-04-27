@@ -14,6 +14,7 @@ const Projects_data = [
       name: "Personal Portfolio",
       desc: "A sleek, responsive personal portfolio built with React.js, showcasing my skills, projects, and contact details. Features dynamic naviga...."
     },
+  
     {
       id: 4,
       name: "Amazon Clone",
