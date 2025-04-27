@@ -5,9 +5,28 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import axios from 'axios';
 
+const ProjectDetail = ({ project, onClose }) => {
+  if (!project) return null;
+
+  return (
+    <div className="project-detail-overlay">
+      <div className="project-detail">
+        <button className="close-btn" onClick={onClose}>
+          ×
+        </button>
+        <h1>{project.name}</h1>
+        <p>{project.long_desc}</p>
+        <p id='github-link'><a href={project.gitLink} target='_blank'>GitHub Link</a></p>
+      </div>
+    </div>
+  );
+};
+
+
 const Projects = () => {
   const [projects_data, setProjects] = useState([]);
   const [loading, setLoading] = useState(true); // State for loading indicator
+  const [selectedProject, setSelectedProject] = useState(null);
 
   useEffect(() => {
     // Fetching data from the Django REST API
@@ -45,17 +64,22 @@ const Projects = () => {
 
                       <h3>{project.id}</h3>
                       <h2>{project.name}</h2>
-                      <p>{project.desc}</p>
-                      <div className="project-readmore">
+                      <p>{project.short_desc}</p>
+                      <div className="project-readmore" onClick={() => setSelectedProject(project)}>
                         <p>Read more</p>
                         <FontAwesomeIcon icon={faArrowRight} />
                       </div>
+                      
                   </div>  
           })
         }
+        <ProjectDetail
+          project={selectedProject}
+          onClose={() => setSelectedProject(null)}
+        />
       </div>
     </div>
   )
 }
 
-export default Projects
+export default Projects;

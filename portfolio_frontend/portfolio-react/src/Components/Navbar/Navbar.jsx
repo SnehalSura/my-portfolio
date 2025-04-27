@@ -27,7 +27,7 @@ const Navbar = () => {
             <li><AnchorLink className='anchor-link' href='#home'>Home</AnchorLink> </li>
             <li><AnchorLink className='anchor-link' href='#about'>About Me</AnchorLink></li>
             <li><AnchorLink className='anchor-link' href='#projects'>Projects</AnchorLink></li>
-            <li><AnchorLink className='anchor-link' href='#'>Experience</AnchorLink></li>
+            <li><AnchorLink className='anchor-link' href='#experience'>Experience</AnchorLink></li>
             <li><AnchorLink className='anchor-link' href='#contact'>Contact</AnchorLink></li>
         </ul>
         

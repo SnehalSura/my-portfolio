@@ -1,51 +1,59 @@
 .experience-container {
-    background-color: #f9f9f9;
-    padding: 20px;
+    padding: 50px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    margin: 20px auto;
+    margin: 20px 80px;
+    margin-top: 150px;
   }
   
-  .section-title {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
+  .experience-title {
     text-align: center;
-    margin-bottom: 20px;
-    text-transform: uppercase;
+    margin-bottom: 40px;
     letter-spacing: 1px;
+    font-size: 50px;
+    font-weight: 600;
   }
   
   .experience-card {
-    background-color: #ffffff;
     padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 24px;
     transition: transform 0.3s ease;
   }
   
+  .experience-card .job-title{
+    font-size: 38px;
+    font-weight: 800;
+    background: linear-gradient(270deg, #DF8908 50%, #B425FF 100.05%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 20px 0;
+  }
+
   .experience-card:hover {
     transform: translateY(-5px);
   }
-  
-  .job-title {
-    font-size: 18px;
-    font-weight: 600;
-    color: #1e90ff;
-    margin-bottom: 5px;
-  }
-  
-  .job-duration {
-    font-size: 14px;
-    font-weight: 500;
-    color: #666;
+
+  .job-duration{
     margin-bottom: 10px;
   }
-  
-  .job-description {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #444;
+
+  @media (max-width: 768px){
+    .experience-container {
+      padding: 50px;
+      margin: 20px 50px;
+      margin-top: 150px;
+    }
+
+    .experience-title h2{
+      font-size: 50px;
+      font-weight: 600;
+    }
+
+    .experience-card h3{
+      margin-top: 0;
+    }
+
+    .experience-card {
+      padding-top: 0;
+    }
   }
-  

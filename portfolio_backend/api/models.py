@@ -15,7 +15,10 @@ class Aboutme(models.Model):
 
 class Projects(models.Model):
     name = models.CharField(max_length=100)
-    desc = models.CharField(max_length=600)
+    short_desc = models.CharField(max_length=400)
+    long_desc = models.CharField(max_length=600)
+    gitLink = models.URLField(max_length=100)
+
 
 class ContactProfile(models.Model):
     email = models.EmailField(max_length=100)

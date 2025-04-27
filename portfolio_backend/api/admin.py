@@ -9,7 +9,7 @@ class AboutmeAdmin(admin.ModelAdmin):
 
 @admin.register(Projects)
 class ProjectsAdmin(admin.ModelAdmin):
-    list_display = ['id', 'name', 'desc' ]
+    list_display = ['id', 'name', 'short_desc', 'long_desc', 'gitLink']
 
 @admin.register(ContactProfile)
 class ContactProfileAdmin(admin.ModelAdmin):

@@ -23,7 +23,6 @@
     display: flex;
     flex-direction: column;
     gap: 80px;
-
 }
 
 .about-para{
@@ -69,7 +68,7 @@
 
 @media (max-width: 768px){
     .about{
-        /* gap: 80px; */
+        gap: 50px;
         margin: 50px 70px;
         align-items: start;
     }
